@@ -16,13 +16,13 @@ import java.util.List;
 
 @SpringBootApplication
 @RequiredArgsConstructor
-public class MvcApplication implements CommandLineRunner {
+public class SpringMvcApplication implements CommandLineRunner {
 
     private final DeveloperRepository developerRepository;
     private final SkillRepository skillRepository;
 
     public static void main(String[] args) {
-        SpringApplication.run(MvcApplication.class, args);
+        SpringApplication.run(SpringMvcApplication.class, args);
     }
 
     @Override
